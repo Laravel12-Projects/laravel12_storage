@@ -17,7 +17,8 @@
         @foreach ($informations as $information)
             <div style="border: 1px solid #ddd; padding: 10px; border-radius: 5px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);">
                 <h4 style="margin-top: 0;">{{ $information->name }}</h4>
-                <img src="{{ asset('images/' . $information->file_uri) }}" alt="file" style="width: 100px; height: 100px; border-radius: 5px;">
+               
+                <img src="{{ asset('storage/images/'.$information->file_uri) }}" alt="file" style="width: 100px; height: 100px; border-radius: 5px;">
             </div>
         @endforeach
     </div>
